@@ -3,7 +3,7 @@ extends Node
 const MAP_FILE_PATH = 'user://map.data'
 
 var newGame = true
-var maxTiles = 100
+var maxTiles = 50
 var maxRocks = 20
 
 var rock = preload("res://Prefabs/rock.tscn")
