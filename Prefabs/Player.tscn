@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/character.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 22.1785, 30.5855 )
+
+[node name="Player" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="img" type="Sprite" parent="." index="0"]
+
+position = Vector2( -21.3165, -91.6631 )
+scale = Vector2( 0.867119, 0.867119 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 455, 40, 50, 124 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="shape" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 1.67707, -36.8196 )
+scale = Vector2( 0.908793, 1.67622 )
+shape = SubResource( 1 )
+
+
